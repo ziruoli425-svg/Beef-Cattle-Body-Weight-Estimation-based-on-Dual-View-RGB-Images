@@ -1,12 +1,27 @@
 .idea/
 .vscode/
+
+# Local Python environments (venv removed locally; ignore if recreated)
 .venv/
 venv/
+
 __pycache__/
 *.pyc
 
+# Training artifacts
 runs/
 *.pt
 *.pth
 
-data/images/
+# Local copies of the manuscript — keep repo lightweight (remove these lines if you want them tracked)
+*.docx
+*.pdf
+
+# Under data/images: ignore bulky raw images only — README / folder placeholders still commit normally
+data/images/**/*.jpg
+data/images/**/*.jpeg
+data/images/**/*.png
+data/images/**/*.webp
+data/images/**/*.bmp
+data/images/**/*.tif
+data/images/**/*.tiff

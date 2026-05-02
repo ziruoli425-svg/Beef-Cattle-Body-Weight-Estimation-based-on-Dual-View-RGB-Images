@@ -1,0 +1,5 @@
+top_image,side_image,weight,cattle_id,split
+images/top_0001.jpg,images/side_0001.jpg,450.2,cow_001,train
+images/top_0002.jpg,images/side_0002.jpg,472.6,cow_002,train
+images/top_0003.jpg,images/side_0003.jpg,398.4,cow_003,train
+images/top_0004.jpg,images/side_0004.jpg,510.1,cow_004,test
