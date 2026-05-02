@@ -1,0 +1,25 @@
+seed: 42
+output_dir: runs
+
+# 只有 train/test 时建议使用 train_holdout（从 train 里按 cattle_id 划出一部分当验证集）
+validation:
+  mode: train_holdout
+  holdout_ratio: 0.15
+
+data:
+  csv_path: data/samples.csv
+  image_root: data
+  image_size: 640
+
+model:
+  pretrained_backbone: true
+  dropout: 0.2
+
+train:
+  epochs: 100
+  batch_size: 8
+  num_workers: 2
+  lr: 0.001
+  weight_decay: 0.01
+  amp: true
+  loss: mae
